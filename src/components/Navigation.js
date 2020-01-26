@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import floppy from '../images/floppy.png'
+import book from '../images/book-icon2.png'
 import sun from '../images/sun.svg'
 import moon from '../images/moon.svg'
 import kakao from '../../content/thumbnails/kakao.png'
@@ -39,8 +39,8 @@ export default class Navigation extends Component {
         <div className="nav-container">
           <div className="brand">
             <Link to="/">
-              <img src={floppy} className="favicon" alt="Floppy Diskette" />
-              <span className="text">DMV</span>
+              <img src={book} className="favicon" alt="Book" />
+              <span className="text">DMV Book Club</span>
             </Link>
           </div>
           <div className="links">
@@ -49,7 +49,7 @@ export default class Navigation extends Component {
                 {link.name}
               </Link>
             ))}
-            <div className="cta">
+            {/* <div className="cta">
               <button
                 className="dark-switcher"
                 onClick={theme.toggleDark}
@@ -62,7 +62,7 @@ export default class Navigation extends Component {
                   <img src={moon} className="theme-icon" alt="Dark Mode" />
                 )}
               </button>
-            </div>
+            </div> */}
             <a
               className="kakao-button"
               target="_blank"

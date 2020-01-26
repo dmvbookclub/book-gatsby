@@ -8,7 +8,7 @@ import PostTags from '../components/PostTags'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import { formatDate, editOnGithub } from '../utils/global'
-import NewsletterForm from '../components/NewsletterForm'
+import NextMeeting from '../components/NextMeeting'
 
 export default class PostTemplate extends Component {
   constructor(props) {
@@ -41,9 +41,10 @@ export default class PostTemplate extends Component {
 
     const date = formatDate(post.date)
     const githubLink = editOnGithub(post)
-    const twitterShare = `http://twitter.com/share?text=${encodeURIComponent(post.title)}&url=${
-      config.siteUrl
-    }/${post.slug}/&via=taniarascia`
+    const twitterShare = ''
+    // const twitterShare = `http://twitter.com/share?text=${encodeURIComponent(post.title)}&url=${
+    //   config.siteUrl
+    // }/${post.slug}/&via=taniarascia`
 
     return (
       <Layout>
@@ -58,15 +59,15 @@ export default class PostTemplate extends Component {
               <h1>{post.title}</h1>
               <div className="post-meta">
                 <time className="date">{date}</time>/
-                <a
+                {/* <a
                   className="twitter-link"
                   href={twitterShare}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Share
-                </a>
-                /
+                </a> 
+                /*/}
                 <a
                   className="github-link"
                   href={githubLink}
@@ -82,7 +83,7 @@ export default class PostTemplate extends Component {
 
           <div className="post" dangerouslySetInnerHTML={{ __html: postNode.html }} />
         </article>
-        <div className="container no-comments">
+        {/* <div className="container no-comments">
           <h3>No comments?</h3>
           <p>
             There are intentionally no comments on this site. Enjoy! If you found any errors in this
@@ -103,7 +104,11 @@ export default class PostTemplate extends Component {
             Subscribe to Newsletter
           </a>
         </div>
-        <UserInfo config={config} />
+        <UserInfo config={config} /> */}
+        <div className="container">
+          <NextMeeting />
+        </div>
+        
       </Layout>
     )
   }

@@ -9,7 +9,7 @@ export default class Footer extends Component {
     return (
       <footer className="footer container">
         <div>
-          DMV Book
+          DMV Book Club
           {/* <a href="https://open.kakao.com/o/gR5zVlY" target="_blank" rel="noopener noreferrer">
             KakaoTalk Open Chat
           </a>
@@ -46,7 +46,7 @@ export default class Footer extends Component {
               alt="GitHub"
             />
           </a> */}
-          <a href="https://open.kakao.com/o/gR5zVlY" title="Kakaotalk Open Chat">
+          {/* <a href="https://open.kakao.com/o/gR5zVlY" title="Kakaotalk Open Chat">
             <img
               src={"https://iopen.kakaocdn.net/favicon.ico"}
               target="_blank"
@@ -54,7 +54,7 @@ export default class Footer extends Component {
               className="footer-img"
               alt="Kakaotalk Open Chat"
             />
-          </a>
+          </a> */}
           
         </div>
       </footer>

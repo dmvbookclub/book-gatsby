@@ -1,36 +1,29 @@
 const config = {
-  siteTitle: 'Tania Rascia',
-  siteTitleShort: 'Tania Rascia',
-  siteTitleAlt: 'Tania Rascia',
+  siteTitle: 'DMV BOOK',
+  siteTitleShort: 'DMV BOOK',
+  siteTitleAlt: 'DMV BOOK',
   siteLogo: '/logos/logo-1024.png',
   siteUrl: 'https://www.taniarascia.com',
-  repo: 'https://github.com/taniarascia/taniarascia.com',
+  repo: 'https://github.com/dmvbookclub/book-gatsby',
   pathPrefix: '',
   dateFromFormat: 'YYYY-MM-DD',
   dateFormat: 'MMMM Do, YYYY',
   siteDescription:
-    'Tania Rascia is a front end software developer and writer specializing in modern JavaScript.',
+    'DMV BOOK CLUB',
   siteRss: '/rss.xml',
-  googleAnalyticsID: 'UA-42068444-1',
-  postDefaultCategoryID: 'Tech',
-  newsletter: 'https://taniarascia.substack.com',
-  newsletterEmbed: 'https://taniarascia.substack.com/embed',
-  userName: 'Tania',
-  userEmail: 'hello@taniarascia.com',
-  userTwitter: 'taniarascia',
   menuLinks: [
     {
-      name: 'About learn',
-      link: '/learn/',
-    },
-    {
       name: 'Books',
-      link: '/blog/',
+      link: '/books/',
     },
-    {
-      name: 'Contact',
-      link: '/contact/',
-    },
+    // {
+    //   name: 'About learn',
+    //   link: '/learn/',
+    // },
+    // {
+    //   name: 'Contact',
+    //   link: '/contact/',
+    // },
   ],
   themeColor: '#3F80FF', // Used for setting manifest and progress theme colors.
   backgroundColor: '#ffffff',
