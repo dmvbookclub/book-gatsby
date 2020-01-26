@@ -14,17 +14,11 @@ export default class UserInfo extends Component {
             </div>
             <div>
               <p>
-                I’m apple Rascia. I document everything I learn and help thousands of people start
-                coding careers.{' '}
-                <strong>
-                  My site has no ads, sponsors, or bullshit. If you enjoy my content, please
-                  consider supporting what I do.
-                </strong>
               </p>
 
               <div className="flex">
                 <a
-                  href="https://ko-fi.com/applerascia"
+                  href="https://ko-fi.com/"
                   className="donate-button"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -34,7 +28,7 @@ export default class UserInfo extends Component {
                 </a>
                 <a
                   className="patreon-button"
-                  href="https://www.patreon.com/applerascia"
+                  href="https://www.patreon.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

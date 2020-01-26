@@ -906,9 +906,10 @@ blockquote {
     }
 
     &.active {
-      background: $primary-color;
-      color: white;
-
+      // background: $primary-color;
+      // color: white;
+      color: #223A5E;
+      background: #ffeb00;
       .count {
         background: white;
       }
@@ -1094,21 +1095,28 @@ button[disabled] {
   }
 }
 figcaption {
-  margin: -15px 0 10px 0;
+  margin: 0px 0 10px 0;
 }
 .book-link-img {
   width: 25px;
   height: auto;
+  border-radius: 50%;
   margin:0 5px;
   transform-origin: bottom;
-    transition: all .5s ease;
-    &:hover,
-    &:active,
-    &:focus {
-      transform: scale(1.3) perspective(1px);
-      animation: none;
-    }
+  transition: all .5s ease;
+  &:hover,
+  &:active,
+  &:focus {
+    transform: scale(1.3) perspective(1px);
+    animation: none;
+  }
 }
+@include small-breakpoint {
+    .book-link-img {
+      width: 50px ;
+    }
+  }
+
 .location {
   color: #ffeb00;
   text-decoration: underline;

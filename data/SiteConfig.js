@@ -13,7 +13,7 @@ const config = {
   siteRss: '/rss.xml',
   menuLinks: [
     {
-      name: 'Books',
+      name: '지난 책들',
       link: '/books/',
     },
     // {

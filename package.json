@@ -1,9 +1,9 @@
 {
-  "name": "DMV",
-  "description": "DMV book.",
+  "name": "DMV_Bookclub",
+  "description": "DMV bookclub.",
   "version": "0.0.1",
   "author": "Imgum",
-  "repository": "git@github.com:dmv",
+  "repository": "git@github.com:dmvbookclub",
   "dependencies": {
     "eslint-utils": "^1.4.1",
     "gatsby": "^2.13.13",
