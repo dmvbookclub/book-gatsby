@@ -9,6 +9,7 @@ import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import { formatDate, editOnGithub } from '../utils/global'
 import NextMeeting from '../components/NextMeeting'
+import Comments from 'remark-ninja-react';
 
 export default class PostTemplate extends Component {
   constructor(props) {
@@ -107,6 +108,12 @@ export default class PostTemplate extends Component {
         <UserInfo config={config} /> */}
         <div className="container">
           <NextMeeting />
+          <br/>
+          <h2>Comment</h2>
+          <Comments
+            siteId='1d577a1f-4627-456a-8671-fd796f984f7b'
+            threadSlug={slug}
+          />
         </div>
         
       </Layout>
