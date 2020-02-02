@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const urljoin = require('url-join')
 const config = require('./data/SiteConfig')
 
@@ -94,7 +96,7 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: 'minimal-ui',
+        display: 'standalone',
         icons: [
           {
             src: '/logos/apple-touch-icon-57x57.png',
@@ -109,6 +111,20 @@ module.exports = {
         ],
       },
     },
-   
+    'gatsby-plugin-offline',
+   {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        features: {
+          auth: true,
+          database: true,
+          firestore: false,
+          storage: false,
+          messaging: false,
+          functions: true,
+          performance: false,
+        },
+      },
+    },
   ],
 }
