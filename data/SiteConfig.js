@@ -2,7 +2,7 @@ const config = {
   siteTitle: 'DMV BOOK',
   siteTitleShort: 'DMV BOOK',
   siteTitleAlt: 'DMV BOOK',
-  siteLogo: '/logos/book-icon2.png',
+  siteLogo: 'https://s3.amazonaws.com/upenn-wdp/images/book-icon2.png',
   siteUrl: 'https://www.dmvbookclub.com',
   repo: 'https://github.com/dmvbookclub/book-gatsby',
   pathPrefix: '',

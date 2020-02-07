@@ -12,7 +12,7 @@ module.exports = {
       feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `/logos/apple-touch-icon-57x57.png`,
+      image_url: `https://s3.amazonaws.com/upenn-wdp/images/book-icon2.png`,
     },
   },
   plugins: [
@@ -51,8 +51,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 850,
@@ -97,22 +96,20 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'standalone',
-        icons: [
-          {
-            src: '/logos/apple-touch-icon-57x57.png',
+        icons: [{
+            src: '/logos/logo-57.png',
             sizes: '57x57',
             type: 'image/png',
           },
           {
-            src: '/logos/book-icon2',
+            src: '/logos/logo-1000.png',
             sizes: '1000x1000',
             type: 'image/png',
           },
         ],
       },
     },
-    'gatsby-plugin-offline',
-   {
+    {
       resolve: "gatsby-plugin-firebase",
       options: {
         features: {
@@ -124,6 +121,12 @@ module.exports = {
           functions: true,
           performance: false,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/books/`, '/*'],
       },
     },
   ],
