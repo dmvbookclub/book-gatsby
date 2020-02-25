@@ -7,7 +7,7 @@ const config = {
   repo: 'https://github.com/dmvbookclub/book-gatsby',
   pathPrefix: '',
   dateFromFormat: 'YYYY-MM-DD',
-  dateFormat: 'MMMM Do, YYYY',
+  dateFormat: 'MMMM DD, YYYY',
   siteDescription:
     'DMV BOOK CLUB',
   siteRss: '/rss.xml',
