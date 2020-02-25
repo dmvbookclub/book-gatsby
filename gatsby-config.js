@@ -97,12 +97,12 @@ module.exports = {
         theme_color: config.themeColor,
         display: 'standalone',
         icons: [{
-            src: '/logos/logo-57.png',
+            src: '/logos/logo-48.png',
             sizes: '57x57',
             type: 'image/png',
           },
           {
-            src: '/logos/logo-1000.png',
+            src: '/logos/logo-1024.png',
             sizes: '1000x1000',
             type: 'image/png',
           },
