@@ -41,7 +41,7 @@
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
     "remark-ninja-react": "^2.3.8",
-    "sharp": "^0.22.1",
+    "sharp": "^0.30.5",
     "typography": "^0.16.19",
     "url-join": "^4.0.0"
   },
